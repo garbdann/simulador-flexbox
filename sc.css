@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+p {
+  margin: 25px 0px 10px 0px;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -11,47 +15,83 @@
 .flex-container-nav {
   display: flex;
   flex-direction: column;
-  background-color: gray;
-  justify-content: space-around;
+  background-color: #d3b8ff;
   height: 100vh;
   width: 15%;
+  border-right: 3px solid black;
+  align-items: center;
 }
 
 .colors-inline {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
-
-.box-color {
+.colors-inline .box-color {
+  background-color: violet;
   width: 50px;
   height: 50px;
-  background-color: red;
+  margin: 5px;
+  border: 5px solid black;
+}
+.colors-inline .box-color:hover {
+  cursor: pointer;
+}
+
+#box0 {
+  background-color: violet;
+}
+
+#box1 {
+  background-color: salmon;
+}
+
+#box2 {
+  background-color: blue;
+}
+
+#box3 {
+  background-color: white;
+}
+
+#box4 {
+  background-color: orange;
+}
+
+#box5 {
+  background-color: green;
 }
 
 .formats-inline {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 #format-square {
-  background-color: purple;
+  background-color: violet;
   width: 50px;
   height: 50px;
+  margin: 5px;
+}
+#format-square:hover {
+  cursor: pointer;
 }
 
 #format-circle {
-  background-color: purple;
+  background-color: violet;
   width: 50px;
   height: 50px;
+  margin: 5px;
   border-radius: 75%;
+}
+#format-circle:hover {
+  cursor: pointer;
 }
 
 .size {
   border: 2px solid black;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 10px 20px 0px 20px;
+  width: 200px;
+  height: 20px;
 }
 
 .flex-container-main {
@@ -59,4 +99,16 @@
   flex-direction: row;
   height: 100vh;
   width: 85%;
+}
+.flex-container-main .main-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: violet;
+  border: 5px solid black;
+  margin: 10px;
+  width: 140px;
+  height: 140px;
+  font-size: 45px;
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=sc.css.map */

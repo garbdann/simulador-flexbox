@@ -11,8 +11,8 @@
     <div class="flex-container">
         <div class="flex-container-nav">
             <h2>SIMULADOR</h2>
-            <h4>Flexbox</h4>
-            <p>Preenchimento</p>
+            <h4 style="margin-top: 25px;">Flexbox</h4>
+            <p> Preenchimento</p>
             <div class="colors-inline">
                 <div class="box-color" id="box0"></div>
                 <div class="box-color" id="box1"></div>
@@ -29,16 +29,16 @@
                 <div id="format-circle"></div>
             </div>
             <p>Tamanho</p>
-            <input type="number" class="size" name="size" value="100" step="10" min="100" max="180"/>
+            <input type="number" class="size" name="size" value="140" step="10" min="100" max="180"/>
             <p>Alinhamento</p>
-            <select class="size">
+            <select class="size" id="select-direction">
                 <option>FLEX-DIRECTION</option>
                 <option>Row</option>
                 <option>Column</option>
                 <option>Row-Reverse</option>
                 <option>Column-Reverse</option>
             </select>
-            <select class="size">
+            <select class="size" id="select-justify-content">
                 <option>JUSTIFY-CONTENT</option>
                 <option>Center</option>
                 <option>Flex-Start</option>
@@ -46,7 +46,7 @@
                 <option>Space-Around</option>
                 <option>Space-Between</option>
             </select>
-            <select class="size">
+            <select class="size" id="select-align-items">
                 <option>ALIGN-ITEMS</option>
                 <option>Center</option>
                 <option>Flex-Start</option>
@@ -56,9 +56,11 @@
             </select>
         </div>
         <div class="flex-container-main">
-            ihjnigjhrfhr
+            <div class="main-square">1</div>
+            <div class="main-square">2</div>
+            <div class="main-square">3</div>         
         </div>
     </div>
 </body>
-
+<script src="script.js"></script>
 </html>
